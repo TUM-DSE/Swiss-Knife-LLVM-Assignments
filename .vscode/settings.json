@@ -1,3 +1,13 @@
 {
-  "nixEnvSelector.nixFile": "${workspaceRoot}/default.nix"
+  "nixEnvSelector.nixFile": "${workspaceRoot}/default.nix",
+  "cmake.sourceDirectory": "${workspaceFolder}/Assignment 1/llvm-project/llvm",
+  "cmake.buildDirectory": "${workspaceFolder}/Assignment 1/llvm-project/build",
+  "cmake.generator": "Ninja",
+  "cmake.configureSettings": {
+      "CMAKE_C_COMPILER": "clang",
+      "CMAKE_CXX_COMPILER": "clang++",
+      "CMAKE_INSTALL_PREFIX": "../build",
+      "CMAKE_EXPORT_COMPILE_COMMANDS": 1,
+      "LLVM_USE_LINKER": "gold"
+  }
 }
