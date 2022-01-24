@@ -16,7 +16,7 @@ We recommend you follow these steps (these will differ if you're using an IDE / 
 1. Clone LLVM into this directory (Assignment 1) with the following command ```git clone https://github.com/llvm/llvm-project.git```
 2. Change directories with ```cd llvm-project```
 3. Configure LLVM with ```cmake -S llvm -B build -G "Ninja"```
-4. Build a vanilla version of opt with ```cmake --build build –-target opt```
+4. Build a vanilla version of opt with ```cmake --build build --target opt```
 5. Check that it works by running ```./build/bin/opt --version```
 
 Now for adding your passe:
